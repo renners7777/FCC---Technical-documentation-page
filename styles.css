@@ -1,0 +1,90 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+    background-color: whitesmoke;
+    overflow: auto;
+}
+
+.wide-wrapper {
+    padding: 0.8em;
+}
+
+code {    
+    background-color: #003;
+    color: whitesmoke;
+}
+
+header {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+ul {
+list-style-type: none;
+}
+
+.narrow-wrapper li {
+    border-bottom: 3px dotted gray;
+}
+
+a {  
+    text-decoration: none;
+    color: blue;
+    background-color: azure;
+}
+
+.main-section ul {
+    list-style-type: circle;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.backToTop {
+    background-color: orange;
+    border-radius: 20px;
+    padding: 0.5em;
+    position: fixed;
+}
+
+@media (min-width: 780px) {
+    .wrapper {
+        display:flex;
+        gap:2em;
+    }
+
+    .narrow-wrapper {
+    max-width: 100%;
+    border-right: 3px solid gray;
+    padding-right: 0.5em;
+    overflow: hidden;
+}
+
+    .wide-wrapper {
+        width: 680px;
+        overflow: auto;
+        padding-left: 10em;
+    }
+}
